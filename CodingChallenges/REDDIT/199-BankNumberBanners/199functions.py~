@@ -1,0 +1,14 @@
+def GetDigit(integer):
+
+	line1 = " _     _  _     _  _  _  _  _ "
+	line2 = "| |  | _| _||_||_ |_   ||_||_|"
+	line3 = "|_|  ||_  _|  | _||_|  ||_| _|"
+	line4 = " "*27
+
+	return [line1[integer*3:(integer*3+3)], \
+		line1[integer*3:(integer*3+3)], \
+		line1[integer*3:(integer*3+3)], \
+		line1[integer*3:(integer*3+3)]] \
+
+
+

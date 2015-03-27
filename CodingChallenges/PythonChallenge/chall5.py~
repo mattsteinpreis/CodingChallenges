@@ -1,0 +1,12 @@
+import urllib,pickle
+
+myurl="http://www.pythonchallenge.com/pc/def/banner.p"
+
+grab = urllib.urlopen(myurl)
+myobj = pickle.load(grab)
+grab.close()
+
+print myobj
+
+for item in myobj:
+	print "".join(i[0]*i[1] for i in item)
